@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "font1";
+  src: url(fonts/Lausanne-300.woff2);
+}
+@font-face {
+  font-family: "font2";
+  src: url(fonts/Lausanne-500.woff2);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.moveX {
+  animation: moveAnimation 20s linear infinite;
+}
+@keyframes moveAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* body {
+  background-color: black;
+  color: white;
+} */
